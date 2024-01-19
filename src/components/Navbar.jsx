@@ -35,23 +35,28 @@ const handleNav = () => {
                 <FaInstagram  className='mx-4'/>
             </div>
             {/*Hamburger Icon */}
-            <div className='sm:hidden z-10'>
+            <div onClick={handleNav} className='sm:hidden z-10'>
                 <FaBars size={20} className='mr-4 cursor-pointer'/>
             </div>
             {/*Mobile Menu*/}
-            <div className={'overflow-y-hidden md:hidden ease-in duration-300 absolute text-gray-300 left-0 top-0 w-full h-screen bg-black/90 px-4 py-7 flex flex-col\'\n' +
-                '            : \'absolute top-0 h-screen left-[-100%] ease-in duration-500'}>
-                <ul>
-                    <li>
+            <div
+               onClick={handleNav}
+               className={
+                nav
+                    ? 'overflow-y-hidden md:hidden ease-in duration-300 absolute text-gray-300 left-0 top-0 w-full h-screen bg-black/90 px-4 py-7 flex flex-col'
+                    : 'absolute top-0 h-screen left-[-100%] ease-in duration-500'
+            }>
+                <ul className='h-full w-full text-center pt-12'>
+                    <li className='text-2xl py-8'>
                         <a href="/">Home</a>
                     </li>
-                    <li>
+                    <li className='text-2xl py-8'>
                         <a href="#gallery">Gallery</a>
                     </li>
-                    <li>
+                    <li className='text-2xl py-8'>
                         <a href="#deals">Deals</a>
                     </li>
-                    <li>
+                    <li className='text-2xl py-8'>
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
