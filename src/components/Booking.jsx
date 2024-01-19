@@ -7,7 +7,7 @@ const Booking = () =>{
                 <div className='flex flex-col my-2 py-2'>
                     <label >Destinations</label>
                     <select className='lg:w-[300px] md:w-full border rounded-md p-2'>
-                        <option>Grand Antigua</option>
+                        <option>Grande Antigua</option>
                         <option>Key West</option>
                         <option>Maldives</option>
                         <option>Cozumel</option>
@@ -24,9 +24,9 @@ const Booking = () =>{
                         <input className='border rounded-md p-2' type="date"/>
                     </div>
                 </div>
-                <div>
-                    <label className='flex flex-col my-2 p-2 w-full'>Search</label>
-                    <button>Rates & Availability</button>
+                <div  className='flex flex-col my-2 p-2 w-full'>
+                    <label>Search</label>
+                    <button className='w-full'>Rates & Availability</button>
                 </div>
             </form>
         </div>
