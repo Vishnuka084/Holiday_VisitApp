@@ -2,8 +2,8 @@ import React from "react";
 
 const Booking = () =>{
     return(
-        <div id='deals'>
-            <form>
+        <div id='deals' className='max-w-[1140px] m-auto w-full p-4'>
+            <form className='lg:flex lg:justify-between w-full items-center'>
                 <div>
                     <label >Destinations</label>
                     <select name="" id="">
