@@ -6,7 +6,7 @@
 
 
 :root{
-    --primary-dark: #56551e5;
+    --primary-dark: #5651e5;
     --primary-light: #709dff;
 }
 
@@ -14,4 +14,17 @@
     html{
         @apply scroll-smooth
     }
+    body{
+        @apply font-[Popins]
+    }
+    li{
+        @apply p-4 text-sm
+    }
+    button{
+        @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to[var(--primary-light)] text-white
+    }
+    h2{
+        @apply text-xl font-bold
+    }
+
 }
